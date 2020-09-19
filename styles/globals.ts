@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
 html,
 body {
   padding: 0;
@@ -14,3 +17,4 @@ a {
 * {
   box-sizing: border-box;
 }
+`;
