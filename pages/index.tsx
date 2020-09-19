@@ -1,11 +1,13 @@
-import Head from 'next/head';
+import React from "react";
+import styled from "styled-components";
+
+const Container = styled.div`
+  background: darkblue;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+`;
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
-    </>
-  )
+  return <Container>Hello World!</Container>;
 }
