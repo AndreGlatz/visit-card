@@ -7,6 +7,11 @@ export default createGlobalStyle`
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    height: 100%;
+  }
+
+  body > div {
+    height: 100%;
   }
 
   a {
@@ -17,4 +22,5 @@ export default createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+
 `;
