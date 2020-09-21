@@ -1,4 +1,4 @@
-import { Layout, Title } from "@App/components";
+import { Layout, Title, ArrowBack } from "@App/components";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
@@ -12,6 +12,7 @@ const Text: React.FC = () => {
       <Head>
         <title>Your text ❤️</title>
       </Head>
+      <ArrowBack href="http://localhost:3000" />
       <Title>{text}</Title>
     </Layout>
   );
