@@ -1,4 +1,4 @@
-import { Layout } from "@App/components";
+import { Layout, Title } from "@App/components";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -8,7 +8,7 @@ const Text: React.FC = () => {
 
   return (
     <Layout>
-      <h1>{text}</h1>
+      <Title>{text}</Title>
     </Layout>
   );
 };
