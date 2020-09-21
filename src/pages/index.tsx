@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Layout, TextInput } from "@App/components";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Home() {
   const router = useRouter();
@@ -20,6 +21,9 @@ export default function Home() {
 
   return (
     <Layout>
+      <Head>
+        <title>Home</title>
+      </Head>
       <TextInput
         placeholder="Write anything"
         onChange={handleChange}
