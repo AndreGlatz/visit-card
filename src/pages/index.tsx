@@ -10,7 +10,7 @@ export default function Home() {
     const key = event.key;
 
     if (key === "Enter") {
-      router.push(`http://localhost:3000/${value}`);
+      router.push(`http://localhost:3000/text/${value}`);
     }
   }
 
