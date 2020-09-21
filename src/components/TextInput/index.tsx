@@ -1,36 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import { Input } from "./styles";
-import { useRouter } from "next/router";
 
-type Props = {
+interface Props {
   placeholder?: any;
-};
+  onKeyDown?: any;
+  onChange?: any;
+}
 
-const TextInput: React.FC<Props> = (props: Props) => {
-  const router = useRouter();
-  const [value, setValue] = useState("");
-
-  function redirect(event: React.KeyboardEvent<HTMLInputElement>) {
-    const key = event.key;
-
-    if (key === "Enter") {
-      router.push(`https://localhost:3000/${value}`);
-    }
-  }
-
-  function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setValue(event.target.value);
-  }
-
+export const TextInput: React.FC<Props> = (props: Props) => {
   return (
     <Input
       name="text"
       type="text"
       placeholder={props.placeholder}
-      onKeyDown={redirect}
-      onChange={handleChange}
+      onKeyDown={props.onKeyDown}
+      onChange={props.onChange}
     />
   );
 };
-
-export default TextInput;

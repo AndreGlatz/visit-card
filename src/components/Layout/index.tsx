@@ -5,8 +5,6 @@ type Props = {
   children?: any;
 };
 
-const Background: React.FC<Props> = (props: Props) => {
+export const Layout: React.FC<Props> = (props: Props) => {
   return <Container>{props.children}</Container>;
 };
-
-export default Background;
