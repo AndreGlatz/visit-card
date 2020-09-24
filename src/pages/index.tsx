@@ -9,9 +9,10 @@ export default function Home() {
 
   function redirect(event: React.KeyboardEvent<HTMLInputElement>) {
     const key = event.key;
+    const host = window.location.href;
 
     if (key === "Enter") {
-      router.push(`http://localhost:3000/text/${value}`);
+      router.push(`${host}text/${value}`);
     }
   }
 
@@ -25,7 +26,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <TextInput
-        placeholder="Write anything"
+        placeholder="Write your GitHub user"
         onChange={handleChange}
         onKeyDown={redirect}
       />
