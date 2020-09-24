@@ -12,7 +12,7 @@ export default function Home() {
     const host = window.location.href;
 
     if (key === "Enter") {
-      router.push(`${host}text/${value}`);
+      router.push(`${host}users/${value}`);
     }
   }
 

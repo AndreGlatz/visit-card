@@ -3,11 +3,9 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
   html,
   body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Roboto, sans-serif;
     height: 100%;
+    font-size: 16px;
   }
 
   body > div {
@@ -20,7 +18,15 @@ export default createGlobalStyle`
   }
 
   * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
   } 
+
+  @media only screen and (min-width: 1366px) {
+    body, html {
+      font-size: 24px;
+    }
+  }
 
 `;

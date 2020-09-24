@@ -2,8 +2,7 @@ import React, { ReactNode } from "react";
 import { Container, Image } from "./styles";
 
 type Props = {
-  href?: string;
-  children?: ReactNode;
+  href: string;
 };
 
 export const ArrowBack: React.FC<Props> = (props: Props) => {
