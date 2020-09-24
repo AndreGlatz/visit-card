@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 import { Layout, Card, ArrowBack } from "@App/components";
-import { User } from "@App/model/User";
 import { useRouter } from "next/router";
 
 export default function Profile() {
